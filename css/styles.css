@@ -6,7 +6,7 @@
 	--blanco: #FFF;
 	--negro: #000;
 
-	--fuente-principal: font-family: 'Potta One', cursive;
+	--fuente-principal: 'Potta One', cursive;
 }
 
 /** Globales **/
@@ -25,7 +25,7 @@ html {
 }
 
 body {
-	background-color: var(--primario);
+	background-image: linear-gradient(to left, var(--primario) 10%, var(--primario-oscuro) 100%);
 	font-size: 1.6rem;
 	line-height: 1.5;
 }
@@ -41,7 +41,7 @@ a {
 }
 
 img {
-	width: 100%; /* veremos por que despues... */
+	max-width: 100%;
 }
 
 .contenedor {
@@ -65,4 +65,23 @@ h2 {
 
 h3 {
 	font-size: 2.4rem;
+}
+
+/** Estilos al header  */
+
+.header__titulo--primario {
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--blanco);
+	font-family: var(--fuente-principal);
+	line-height: 0.9;
+	text-shadow: 0 0 .4rem var(--negro);
+}
+
+.header__titulo--secundario {
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--secundario);
+	font-family: var(--fuente-principal);
+	display: block;
 }
