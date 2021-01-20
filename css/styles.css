@@ -1,13 +1,13 @@
 :root {
 	--primario: #2762b0;
-	--primario-oscuro: #1b457c;
+	--primarioOscuro: #1b457c;
 	--secundario: #FFCE00;
-	--secundario-oscuro: rgb(233, 287, 2);
+	--secundarioOscuro: rgb(233, 287, 2);
 	--blanco: #FFF;
 	--negro: #000;
-	--gris-oscuro: #444343;
-	--fuente-principal: 'Potta One', cursive;
-	--fuente-navegacion: 'Poppins', sans-serif;
+	--grisOscuro: #444343;
+	--fuentePrincipal: 'Potta One', cursive;
+	--fuenteSecundaria: 'Poppins', sans-serif;
 }
 
 /** Globales **/
@@ -26,7 +26,7 @@ html {
 }
 
 body {
-	background-image: linear-gradient(to left, var(--primario) 10%, var(--primario-oscuro) 100%);
+	background-image: linear-gradient(to left, var(--primario) 10%, var(--primarioOscuro) 100%);
 	font-size: 1.6rem;
 	line-height: 1.5;
 }
@@ -53,7 +53,7 @@ img {
 h1, h2, h3 {
 	text-align: center;
 	color: var(--secundario);
-	font-family: var(--fuente-principal);
+	font-family: var(--fuentePrincipal);
 }
 
 h1 {
@@ -74,7 +74,7 @@ h3 {
 	text-transform: uppercase;
 	text-align: center;
 	color: var(--blanco);
-	font-family: var(--fuente-principal);
+	font-family: var(--fuentePrincipal);
 	line-height: 0.9;
 	text-shadow: 0 0 .4rem var(--negro);
 }
@@ -83,14 +83,14 @@ h3 {
 	text-transform: uppercase;
 	text-align: center;
 	color: var(--secundario);
-	font-family: var(--fuente-principal);
+	font-family: var(--fuentePrincipal);
 	display: block;
 }
 
-/** Navegación */
+/** Estilos de barra de Navegación */
 
 .navegacion {
-	background-color: var(--gris-oscuro);
+	background-color: var(--grisOscuro);
 	padding: .1rem 0;
 	opacity: 1;
 	
@@ -104,7 +104,7 @@ h3 {
 }
 
 .navegacion__lista__enlace {
-	font-family: var(--fuente-navegacion);
+	font-family: var(--fuenteSecundaria);
 	color: var(--blanco);
 	font-weight: 600;
 	font-size: 2rem;
@@ -115,3 +115,15 @@ h3 {
 	color: var(--secundario);
 }
 
+/** Estilos al footer */
+
+.footer {
+	background-color: var(--grisOscuro);
+	padding: 1rem 0;
+	margin-top: 2rem;
+}
+
+.footer__texto {
+	text-align: center;
+	font-family: var(--fuenteSecundaria);
+}
