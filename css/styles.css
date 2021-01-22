@@ -118,6 +118,12 @@ h3 {
 	color: var(--secundario);
 }
 
+/** Estilos al titulo dentro del contenedor  */
+
+.contenedor__titulo {
+	text-shadow: 0 0 0.2rem var(--negro);
+}
+
 /** Estilos al footer */
 
 .footer {
@@ -131,20 +137,44 @@ h3 {
 	font-family: var(--fuenteSecundaria);
 }
 
+/** Estilos al grid  */
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+}
+
+@media (min-width: 768px) {
+	.grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
 /** Estilos al producto  */
 
 .producto {
-
+	background-color: var(--primarioOscuro);
+	padding: 1rem;
 }
 
 .producto__imagen {
-
+	max-width: 100%;
 }
 
 .producto__informacion {
+}
 
+.producto__nombre {
+	font-size: 3rem;
 }
 
 .producto__precio {
-	
+	font-size: 2.5rem;
+}
+
+.producto__nombre,
+.producto__precio {
+	font-family: var(--fuenteSecundaria);
+	margin: 1rem 0;
+	text-align: center;
 }
