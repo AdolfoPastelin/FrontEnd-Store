@@ -27,7 +27,7 @@ html {
 
 body {
 	background-image: linear-gradient(to left, var(--primario) 10%, var(--primarioOscuro) 100%);
-	font-size: 1.6rem;
+	font-size: 16px;
 	line-height: 1.5;
 }
 
@@ -226,8 +226,8 @@ h3 {
 	}
 }
 
-.nosotros__contenido {
-}
+/* .nosotros__contenido {
+} */
 
 .nosotros__imagen {
 	grid-row: 1 / 2;
@@ -268,3 +268,67 @@ h3 {
 .bloque__imagen {
 	width: 50%;
 }
+
+/** Estilos a página estatica del producto  */
+
+@media (min-width: 768px) {
+	.camisa {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 2rem;
+	}
+}
+
+/** Estilos al formulario del producto  */
+
+.formulario {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.formulario__campo--talla {
+	border: 0.7rem solid var(--primarioOscuro);
+	font-family: sans-serif, serif;
+	text-align: center;
+	width: 19rem;
+	margin: auto;
+	text-align: center;
+}
+
+.formulario__campo--cantidad {
+	border: 0.7rem solid var(--primarioOscuro);
+	font-family: sans-serif, serif;
+	width: 10rem;
+	margin: auto;
+	text-align: center;
+}
+
+.formulario__submit {
+	background-color: var(--secundario);
+	border: none;
+	padding: 1rem;
+	font-size: 1.6rem;
+	font-family: var(--fuenteSecundaria);
+	font-weight: 600;
+	cursor: pointer;
+	grid-column: 1 / 3;
+	margin-top: 2rem;
+	width: 55rem;
+}
+
+.formulario__submit:hover {
+	animation: animacionBoton 1s infinite;
+	font-weight: 800;
+}
+
+/* animacion */
+@keyframes animacionBoton {
+	50% {
+		transform: translateY(0.2rem);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
