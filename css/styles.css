@@ -190,12 +190,26 @@ h3 {
 
 .grafico--camisas {
 	grid-row: 2 / 3;
+}
+
+.webp .grafico--camisas {
+	background-image: url(../img/grafico1.webp);
+}
+
+.no-webp .grafico--camisas {
 	background-image: url(../img/grafico1.jpg);
 }
 
 .grafico--node {
-	background-image: url(../img/grafico2.jpg);
 	grid-row: 8 / 9;
+}
+
+.webp .grafico--node {
+	background-image: url(../img/grafico2.webp);
+}
+
+.no-webp .grafico--node {
+	background-image: url(../img/grafico2.jpg);
 }
 
 @media (min-width: 768px) {
